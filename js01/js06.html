@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>aaaaaa</title>
+    <script type="text/javascript">
+        // ① 
+       //for(var i = 1; i <= 100; i++){
+       //console.log(i);
+       //}; 
+
+        // ②
+        //for(var i = 30; i <= 80; i+=5){
+        //    console.log(i);
+        //};
+        
+        //for(var i = 30; i <= 80; i++){
+        //  if(i%5 ==0){
+        //      console.log(i);
+        //  }
+        //};
+
+        // 
+        //for(var i = 0; i <= 100; i++){
+        //    if(i%3 ==0 || i%5 ==0){
+        //        console.log(i);
+        //    }
+        //}
+
+        //for(var i=1; i<=100; i++){
+        //    if(i%15 ==0){
+        //        console.log('FizzBuzz');
+        //    }else if(i%5 ==0){
+        //        console.log('Buzz');
+        //    }else if(i%3 ==0){
+        //        console.log('Fizz');
+        //    }else{
+        //    console.log(i);
+        //    }
+        //}
+
+        //        if(start => total){
+        //            
+        //        }else if(start < end){
+        //            return '値が不正です';
+        //        }
+        // for
+        //var addFromStartToEnd = function(start,end){ 
+        //    for(var i = start; i <= end; i++){
+        //        var total = start +1;
+        //        if(total >= start){
+        //            return total;
+        //            
+        //        }else if(total <= end){
+        //            return '値が不正です。';
+        //        }else{
+        //        };
+        //    }
+        //}
+        var addFromStartToEnd = function(start,end){
+            if(start > end ){
+                return '値が不正です'
+            }
+            var total = 0;
+            
+            for(var i = start; i <= end; i++){
+                total +=i;
+            }
+            return total;
+        };
+        var result = addFromStartToEnd(5,10);
+        console.log(result);    //45と表示
+
+        var result = addFromStartToEnd(8,6);
+        console.log(result);    //「値が不正です」と表示
+    </script>
+</head>
+<body>
+</body>
+</html>

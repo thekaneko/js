@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        var bubbleSort = function(data){
+            for(var i=0; i<data.length; i++){
+                if(data[0] < data[1]){
+                        var hoge = data[0];
+                        data[0] = data[2];
+                        data[2] = hoge;
+                    }
+            }
+            for(var i=1; i<data.length; i++){
+                    if(data[1] < data[3]){
+                        var hoge = data[1];
+                        data[1] = data[3];
+                        data[3] = hoge;
+                    }
+            }
+            for(var i=2; i<data.length; i++){
+                    if(data[2] < data[1]){
+                        var hoge = data[2];
+                        data[2] = data[1];
+                        data[1] = hoge;
+                    }
+            }
+            for(var i=3; i<data.length; i++){
+                    if(data[3] < data[2]){
+                        var hoge = data[3];
+                        data[3] = data[2];
+                        data[2] = hoge;
+                    }
+            }
+            for(var i=4; i<data.length; i++){
+                    if(data[4] < data[3]){
+                        var hoge = data[4];
+                        data[4] = data[3];
+                        data[3] = hoge;
+                    }
+            }
+            return data;
+        }
+        var result = bubbleSort([2,5,1,9,8]);
+        console.log(result); //1,2,5,8,9
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

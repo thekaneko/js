@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+    var getMax = function(data){
+        var max = data[0];
+        for(var i = 0; i < data.length; i++){
+            if(max < data[i]){
+                max = data[i];
+            }
+        }
+        return max;
+    }
+    var result = getMax([2,5,1,100,9,8]);
+    console.log(result);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

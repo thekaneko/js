@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+    var hoge = [];
+
+    for(var i = 0; i<100; i++){
+        hoge[i] = i+1
+    };
+
+    for(var i = 0; i<100; i++){
+        if(hoge[i]%15 == 0){
+            hoge[i] = 'FizzBuzz';
+        }else if(hoge[i]%5 == 0){
+            hoge[i] = 'Buzz';
+        }else if(hoge[i]%3 == 0){
+            hoge[i] = 'Fizz';
+        }
+    };
+
+    for (var i = 0; i < hoge.length; i++){
+            console.log(hoge[i]);
+    };
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

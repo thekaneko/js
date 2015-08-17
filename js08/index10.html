@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        var bubbleSort = function(data){
+            for(var i=0; i<data.length; i++){
+                for(var j=0; j<data.length; j++){
+                    if(data[i] < data[j]){
+                        var sort = data[i];
+                        data[i] = data[j];
+                        data[j] = sort;
+                    }
+                }
+            }
+            return data;
+        }
+        var result = bubbleSort([2,5,1,9,8]);
+        console.log(result); //1,2,5,8,9
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

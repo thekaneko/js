@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        var count = function(data){
+            var countNum = {};
+            var fruit = '';
+            for (var i = 0; i < data.length; i++) {
+              if(!countNum[i]){
+                countNum[fruit] = 1;
+                countNum['apple'] =1;
+              }else{
+                countNum[i]+=1;
+              }
+            }
+            return countNum;
+        };
+        var result = count(['orange','apple','lemon','apple','apple','orange']);
+        console.log(result);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

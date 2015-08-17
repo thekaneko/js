@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        var data = {'red':'#FF0000','green':'#00FF00','blue':'0000FF'};
+        var getColorCode = function(color){
+            if(!data[color]){
+                return '未登録';
+            }
+                return data[color];
+        };
+        console.log(getColorCode('red'));
+        console.log(getColorCode('green'));
+        console.log(getColorCode('blue'));
+        console.log(getColorCode('yellow'));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
